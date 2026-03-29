@@ -1,0 +1,37 @@
+{
+"build": {
+  "distDir": "frontend",
+  "devPath": "http://localhost:4173",
+  "withGlobalTauri": true
+},
+  "package": {
+    "productName": "AI Terminal",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "title": "AI Terminal",
+        "width": 1100,
+        "height": 720,
+        "minWidth": 600,
+        "minHeight": 400,
+        "resizable": true,
+        "decorations": true,
+        "transparent": false
+      }
+    ],
+    "allowlist": {
+      "shell": {
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "identifier": "com.aiterminal.app",
+      "icon": [
+        "icons/icon.png"
+      ]
+    }
+  }
+}
